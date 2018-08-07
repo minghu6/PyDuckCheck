@@ -60,7 +60,7 @@ def get_required_methods(cls):
     for attr_s in dir(cls):
         attr = getattr(cls, attr_s)
         if callable(attr) and getattr(attr, REQUIRED, False) and len(signature(attr).parameters)>0:
-            print(MethodTuple(attr_s, signature(attr).parameters))
+            # print(MethodTuple(attr_s, signature(attr).parameters))
             required_methods.append(MethodTuple(attr_s, signature(attr).parameters))
 
     return required_methods
