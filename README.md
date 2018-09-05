@@ -58,7 +58,7 @@ Output:
         def guagua(self):
             return 'gua gua'
 
-        def blabla(self, words):
+        def blabla(self):
             return 'words'
 
 Output:
